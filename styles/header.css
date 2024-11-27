@@ -1,0 +1,46 @@
+header {
+    max-width: 128rem;
+    margin-inline: auto;
+    padding: 2rem 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        width: 3.2rem;
+        height: 3.2rem;
+
+        transition: transform 500ms;
+    }
+
+    /* vai procurar dentro de IMG qualquer um que tenha a sequencia de caracteres "Logo" */
+    img[src*="logo"]:hover {
+        transform: rotate(90deg);
+    }
+
+    img[src*="shopping"]:hover {
+        transform: rotate(-30deg);
+    }
+
+    a {
+        position: relative;
+    }
+
+    a span {
+        font: 500 1.2rem/1.3 "Inter", sans-serif;
+
+        position: absolute;
+        top: -0.5rem;
+        right: -0.5rem;
+
+        border-radius: 50%;
+        background-color: var(--snitap-sun);
+
+        width: 2rem;
+        height: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
